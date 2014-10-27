@@ -61,9 +61,11 @@ class ViewController: UIViewController {
     @IBAction func resetButtonPressed(sender: AnyObject) {
         timer.invalidate()
         noOfAttemptsLabel.text = "# of attempts"
+        timerLabel.text = "00:00:00"
         answerLabel.text = "New game started!"
         guessTextField.text = ""
         numberOfGuess = 0
+        timerStarted = false
     }
     
     func update() {
