@@ -66,6 +66,7 @@ class ViewController: UIViewController {
         guessTextField.text = ""
         numberOfGuess = 0
         timerStarted = false
+        number = Int(arc4random_uniform(100)) + 1 //re-generate random number
     }
     
     func update() {
