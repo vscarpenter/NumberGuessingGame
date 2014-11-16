@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let appInfo = NSBundle.mainBundle().infoDictionary as Dictionary<String,AnyObject>
+        let shortVersionString = appInfo["CFBundleShortVersionString"] as String
+        let bundleVersion      = appInfo["CFBundleVersion"] as String
+        let applicationVersion = shortVersionString + "." + bundleVersion
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(applicationVersion, forKey: "application_version")
+        defaults.setObject("Vinny Carpenter", forKey: "application_copyright")
+        defaults.synchronize()
+        
         return true
     }
 

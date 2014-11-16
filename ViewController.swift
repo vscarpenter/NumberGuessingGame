@@ -23,6 +23,12 @@ class ViewController: UIViewController {
     @IBOutlet var noOfAttemptsLabel: UILabel!
     
     
+    @IBAction func shareButtonClicked(sender: UIButton) {
+        var shareText = "I'm loving Vinny's awesome iOS Number Guessing game. Get it @ http://vinnycarpenter.com"
+        
+        let activityVC:UIActivityViewController = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

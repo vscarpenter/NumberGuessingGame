@@ -68,6 +68,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXx-UT-HPH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="SHARE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="151" y="456" width="73" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="shareButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IHa-Ax-wQz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -126,6 +138,9 @@
                             <constraint firstItem="he2-mu-MTT" firstAttribute="top" secondItem="AiP-LZ-IHf" secondAttribute="bottom" constant="38" id="zI2-Tm-YwP"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AXx-UT-HPH"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="Ix3-Hz-Aua"/>
                                 <exclude reference="TTQ-52-pce"/>
@@ -164,6 +179,9 @@
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AXx-UT-HPH"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="Ix3-Hz-Aua"/>
                                 <include reference="TTQ-52-pce"/>
