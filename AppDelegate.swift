@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         defaults.setObject("Vinny Carpenter", forKey: "application_copyright")
         defaults.synchronize()
         
+        let notificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+        let settings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+        application.registerUserNotificationSettings(settings)
+        
         return true
     }
 

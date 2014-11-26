@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="axD-pi-O2a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="axD-pi-O2a">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,18 +14,19 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guess a number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrg-4e-5k2">
-                                <rect key="frame" x="16" y="94" width="129" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrg-4e-5k2">
+                                <rect key="frame" x="16" y="94" width="122" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-6o-VCw">
-                                <rect key="frame" x="315" y="90" width="44" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-6o-VCw">
+                                <rect key="frame" x="336" y="90" width="62" height="33"/>
                                 <color key="backgroundColor" red="0.81568634510000004" green="0.86666673419999996" blue="0.95294123890000004" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="15"/>
                                 <color key="tintColor" red="0.34117648010000001" green="0.2823529541" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Guess">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,15 +35,18 @@
                                     <action selector="guessButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xPN-zj-8kw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Guess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvV-Xb-nx8">
-                                <rect key="frame" x="16" y="187" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Guess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvV-Xb-nx8">
+                                <rect key="frame" x="16" y="187" width="382" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiP-LZ-IHf">
-                                <rect key="frame" x="144" y="296" width="86" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiP-LZ-IHf">
+                                <rect key="frame" x="125" y="308" width="165" height="30"/>
                                 <color key="backgroundColor" red="0.85882359740000003" green="0.90980398650000005" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="ZLN-Ud-zH1"/>
+                                </constraints>
                                 <color key="tintColor" red="0.34117648010000001" green="0.2823529541" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,24 +56,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="# of attempts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he2-mu-MTT">
-                                <rect key="frame" x="16" y="370" width="97" height="22"/>
+                                <rect key="frame" x="16" y="439" width="97" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter guess (0 - 100)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-Uc-nof">
-                                <rect key="frame" x="153" y="94" width="144" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter guess (0 - 100)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-Uc-nof">
+                                <rect key="frame" x="146" y="94" width="155" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igl-bg-cfY">
-                                <rect key="frame" x="188" y="370" width="171" height="22"/>
+                                <rect key="frame" x="188" y="439" width="210" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXx-UT-HPH">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="154" y="644" width="106" height="30"/>
                                 <state key="normal" title="SHARE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -96,6 +100,7 @@
                             <constraint firstItem="igl-bg-cfY" firstAttribute="leading" secondItem="he2-mu-MTT" secondAttribute="trailing" constant="14" id="IVv-xh-KjC"/>
                             <constraint firstItem="JvV-Xb-nx8" firstAttribute="top" secondItem="PcV-Uc-nof" secondAttribute="bottom" constant="63" id="Ix3-Hz-Aua"/>
                             <constraint firstItem="he2-mu-MTT" firstAttribute="top" secondItem="AiP-LZ-IHf" secondAttribute="bottom" constant="40" id="KEz-Ba-oQD"/>
+                            <constraint firstAttribute="centerY" secondItem="AiP-LZ-IHf" secondAttribute="centerY" constant="45" id="Kya-n3-Q5L"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="top" secondItem="AiP-LZ-IHf" secondAttribute="bottom" constant="48" id="L4P-m3-aht"/>
                             <constraint firstAttribute="trailingMargin" secondItem="igl-bg-cfY" secondAttribute="trailing" constant="-16" id="LU0-tf-c8x"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="leading" secondItem="he2-mu-MTT" secondAttribute="trailing" constant="8" id="Mjg-ch-ir2"/>
@@ -114,6 +119,7 @@
                             <constraint firstAttribute="centerX" secondItem="AiP-LZ-IHf" secondAttribute="centerX" constant="0.5" id="aTc-cL-Ljp"/>
                             <constraint firstItem="PcV-Uc-nof" firstAttribute="leading" secondItem="Wrg-4e-5k2" secondAttribute="trailing" constant="8" id="dci-bD-Hrw"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="top" secondItem="AiP-LZ-IHf" secondAttribute="bottom" constant="38" id="e1d-9Q-4y1"/>
+                            <constraint firstItem="AiP-LZ-IHf" firstAttribute="centerX" secondItem="JvV-Xb-nx8" secondAttribute="centerX" id="edp-nE-YT5"/>
                             <constraint firstItem="he2-mu-MTT" firstAttribute="top" secondItem="AiP-LZ-IHf" secondAttribute="bottom" constant="48" id="fr5-JX-zFq"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="leading" secondItem="he2-mu-MTT" secondAttribute="trailing" constant="8" id="h1O-5w-ee7"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="h3A-1f-BUQ"/>
@@ -123,12 +129,14 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="igl-bg-cfY" secondAttribute="bottom" constant="275" id="jos-Op-Psd"/>
                             <constraint firstItem="tVd-6o-VCw" firstAttribute="leading" secondItem="PcV-Uc-nof" secondAttribute="trailing" constant="26" id="jua-vT-yGL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="igl-bg-cfY" secondAttribute="bottom" constant="275" id="mTe-tp-Dq5"/>
-                            <constraint firstItem="tVd-6o-VCw" firstAttribute="leading" secondItem="PcV-Uc-nof" secondAttribute="trailing" constant="18" id="oMj-XU-PGe"/>
+                            <constraint firstItem="tVd-6o-VCw" firstAttribute="leading" secondItem="PcV-Uc-nof" secondAttribute="trailing" constant="35" id="oMj-XU-PGe"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="leading" secondItem="he2-mu-MTT" secondAttribute="trailing" constant="8" id="q6E-QQ-Isu"/>
                             <constraint firstItem="igl-bg-cfY" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qk2-Wl-0Vq"/>
+                            <constraint firstAttribute="centerY" secondItem="AiP-LZ-IHf" secondAttribute="centerY" constant="57" id="rEC-HJ-bUJ"/>
                             <constraint firstItem="JvV-Xb-nx8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="rUH-Aw-xWA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="igl-bg-cfY" secondAttribute="trailing" id="s02-ah-e71"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AiP-LZ-IHf" secondAttribute="trailing" constant="129" id="sPX-Vd-Tfr"/>
+                            <constraint firstItem="JvV-Xb-nx8" firstAttribute="top" secondItem="PcV-Uc-nof" secondAttribute="bottom" constant="63" id="tep-IY-wKK"/>
                             <constraint firstItem="JvV-Xb-nx8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="uR0-mR-nsD"/>
                             <constraint firstAttribute="centerY" secondItem="AiP-LZ-IHf" secondAttribute="centerY" constant="22.5" id="wYa-Iu-4Sj"/>
                             <constraint firstItem="Wrg-4e-5k2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="wfH-L7-PhU"/>
@@ -145,11 +153,14 @@
                                 <exclude reference="Ix3-Hz-Aua"/>
                                 <exclude reference="TTQ-52-pce"/>
                                 <exclude reference="uR0-mR-nsD"/>
+                                <exclude reference="OSj-CV-2D7"/>
+                                <exclude reference="aTc-cL-Ljp"/>
+                                <exclude reference="rEC-HJ-bUJ"/>
+                                <exclude reference="sPX-Vd-Tfr"/>
+                                <exclude reference="wYa-Iu-4Sj"/>
                                 <exclude reference="6Dd-DB-jUC"/>
                                 <exclude reference="VJg-fS-wtb"/>
                                 <exclude reference="jua-vT-yGL"/>
-                                <exclude reference="aTc-cL-Ljp"/>
-                                <exclude reference="wYa-Iu-4Sj"/>
                                 <exclude reference="0uO-gI-TKR"/>
                                 <exclude reference="1Pq-Hh-yoq"/>
                                 <exclude reference="KEz-Ba-oQD"/>
@@ -209,7 +220,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Number Guessing Game" id="elg-Ob-dbo"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="answerLabel" destination="JvV-Xb-nx8" id="OsJ-Hf-727"/>
                         <outlet property="guessTextField" destination="PcV-Uc-nof" id="sxS-jC-63i"/>
@@ -219,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020.75" y="157.5"/>
+            <point key="canvasLocation" x="1011" y="31"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kLN-u2-DaN">
